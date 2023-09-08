@@ -18,20 +18,20 @@ const Skills = () => {
             // These are the technologies I have worked with
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center  py-8  "  data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="350">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 " >
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center  py-8  "  >
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 " data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="350" >
             <img className="w-20 py-4 mx-auto" src={HTML} alt="HTML icon" />
             <p className="my-4">HTML</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 ">
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 " data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="450">
             <img className="w-20 py-4 mx-auto" src={CSS} alt="CSS icon" />
             <p className="my-4">CSS</p>
           </div>
-          <div className="shadow-md py-4 shadow-[#040c16] hover:scale-110 duration-500 ">
+          <div className="shadow-md py-4 shadow-[#040c16] hover:scale-110 duration-500 " data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="550">
             <img className="w-20 mx-auto" src={JS} alt="JS icon" />
             <p className="my-4">JavaScript</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 ">
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 " data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="650">
             <img
               className="w-20 mx-auto py-4 "
               src={ReactJS}

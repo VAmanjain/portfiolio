@@ -9,16 +9,16 @@ AOS.refresh();
 AOS.refreshHard();
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f] ">
+    <div name="home" className="w-full h-auto  bg-[#0a192f] flex justify-center items-center md:p-4 text-gray-700 py-10  ">
       {/* Container  */}
 
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-cols-2 justify-center items-center h-full">
-        <div className=" w-full h-screen justify-center items-center grid  md:grid-cols-2 gap-2">
-          <div className="w-full justify-center items-center ">
+      <div className="max-w-[1000px]  px-4 sm:px-8 flex flex-cols-2 justify-center items-center h-full ">
+        <div className=" w-full h-screen justify-start items-center grid  md:grid-cols-2 gap-2">
+          <div className="w-full justify-center items-center py-[1.7rem] ">
             <img
               src={Image}
               alt="profile"
-              className="w-[20rem] justify-center items-center mx-16 shadow md:shadow-[#dbdce7] md:items-start w-[15rem] mx-2 mt-10 hover:w-[25rem] duration-600   "
+              className="w-[12rem]  justify-center mx-auto my-[2rem] items-center  shadow sm:w-[15rem] lg:w-[20rem] md:shadow-[#dbdce7] md: w-[15rem]  mt-10 lg:hover:w-[25rem]  duration-600    "
               style={{ borderRadius: "50%" }}
               data-aos="zoom-in"
               data-aos-duration="1200"
@@ -26,9 +26,9 @@ const Home = () => {
             />
           </div>
 
-          <div className="text-left">
+          <div className="text-left ">
             <p
-              className="text-pink-600 z-20"
+              className="text-[0.8rem] sm:text-[1.2rem] text-pink-600 z-20"
               data-aos="fade-right"
               data-aos-duration="1200"
               data-aos-delay="150"
@@ -36,7 +36,7 @@ const Home = () => {
               Hi, my name is
             </p>
             <h1
-              className="text-4xl sm:text-6xl font-bold text-[#ccd6f6]  "
+              className=" text-[2rem]   md:text-4xl sm:text-6xl font-bold text-[#ccd6f6]  "
               data-aos="fade-right"
               data-aos-duration="1200"
               data-aos-delay="300"
@@ -44,7 +44,7 @@ const Home = () => {
               Aman Jain
             </h1>
             <h2
-              className="text-4xl sm:text-6xl font-bold text-[#8892b0]"
+              className="text-xl sm:text-2xl md:text-5xl font-bold text-[#8892b0]"
               data-aos="fade-right"
               data-aos-duration="1200"
               data-aos-delay="450"
