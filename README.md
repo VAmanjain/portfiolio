@@ -47,6 +47,13 @@ if npm install provide any error , try using :
 ```bash
  npm install --force
 ```
+For , Install react-scroll , run command 
+
+```bash
+ npm install react-scroll
+```
+
+
 ### Tailwind Css Installation
 
 Install `tailwindcss` via npm, and then run the init command to generate your tailwind.config.js file.
