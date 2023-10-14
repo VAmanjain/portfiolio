@@ -83,7 +83,7 @@ Add the `@tailwind` directives for each of Tailwind’s layers to your `./src/in
  @tailwind utilities;
 ```
 
-After completing all these steps successfully. Run you app using :
+After completing all these steps successfully. Run app using :
 
 ```bash
  npm start
