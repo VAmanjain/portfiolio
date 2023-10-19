@@ -3,11 +3,15 @@ import HTML from "../assests/html.png";
 import CSS from "../assests/css.png";
 import JS from "../assests/javascript.png";
 import ReactJS from "../assests/react.png";
+import Tailwind from "../assests/tailwindr.png";
+import Bootstrap from "../assests/Bootstrapr.png";
+import Sass from "../assests/sassr.png";
+import GitHub from "../assests/githubr.png";
 
 
 const Skills = () => {
   return (
-    <div name="skills" className=" w-full h-screen bg-[#0a192f] text-gray-300 ">
+    <div name="skills" className=" w-full h-auto text-gray-300 ">
       {/* container  */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col jus  w-full h-full  ">
         <div data-aos="fade-right" data-aos-duration="1200"  data-aos-delay="200">
@@ -38,6 +42,41 @@ const Skills = () => {
               alt="ReactJS icon"
             />
             <p className="my-4">ReactJS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 " data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="650">
+            <img
+              className="w-[120px] mx-auto py-1 "
+              src={Bootstrap}
+              alt="ReactJS icon"
+            />
+            <p className="my-4">BootStarp</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 " data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="650">
+            <img
+              className="w-20 mx-auto py-4"
+              src={Tailwind}
+              alt="ReactJS icon"
+              style={{width:"200px"}}
+            />
+            <p className="my-4">Tailwind CSS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 " data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="650">
+            <img
+              className="w-20 mx-auto py-4 "
+              src={Sass}
+              alt="Sass icon"
+      
+            />
+            <p className="my-4">SASS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 " data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="650">
+            <img
+              className="w-[200px] mx-auto py-1 "
+              src={GitHub}
+              alt="ReactJS icon"
+      
+            />
+            <p className="my-4">GitHub</p>
           </div>
         </div>
       </div>

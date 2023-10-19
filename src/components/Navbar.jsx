@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed  w-screen h-[70px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300  z-10">
+    <div className="fixed  w-screen h-[70px] flex justify-between items-center px-4  text-gray-300  z-10 bg-[#2c47b41a]">
       <div>
         <h1 className="text-3xl font-bold"data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration="800"  data-aos-delay="200">Aman.</h1>

@@ -9,7 +9,7 @@ AOS.refresh();
 AOS.refreshHard();
 const Home = () => {
   return (
-    <div name="home" className="w-full h-auto  bg-[#0a192f] flex justify-center items-center md:p-4 text-gray-700 py-10  ">
+    <div name="home" className="w-full h-auto flex justify-center items-center md:p-4 text-gray-700 py-10  ">
       {/* Container  */}
 
       <div className="max-w-[1000px]  px-4 sm:px-8 flex flex-cols-2 justify-center items-center h-full ">
@@ -18,7 +18,7 @@ const Home = () => {
             <img
               src={Image}
               alt="profile"
-              className="w-[12rem]  justify-center mx-auto my-[2rem] items-center  shadow sm:w-[15rem] lg:w-[20rem] md:shadow-[#dbdce7] md: w-[15rem]  mt-10 lg:hover:w-[25rem]  duration-600    "
+              className="w-[12rem]  justify-center mx-auto my-[2rem] items-center  shadow sm:w-[15rem] lg:w-[20rem] md:shadow-[#dbdce7] md: w-[15rem]  mt-10 lg:hover:w-[25rem]  duration-600 transform-[ease-in-out]   "
               style={{ borderRadius: "50%" }}
               data-aos="zoom-in"
               data-aos-duration="1200"
