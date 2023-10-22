@@ -64,17 +64,6 @@ const Home = () => {
               into my web world together! 😄🌐
             </p>
             <div>
-              <button
-                className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 "
-                data-aos="fade-right"
-                data-aos-duration="1200"
-                data-aos-delay="750"
-              >
-                Let's Started
-                <span className="group-hover:rotate-90 duration-300b">
-                  <HiArrowNarrowRight className="ml-3" />
-                </span>
-              </button>
             </div>
           </div>
         </div>

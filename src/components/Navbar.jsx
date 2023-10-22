@@ -12,12 +12,16 @@ const Navbar = () => {
     <div className="fixed  w-screen h-[70px] flex justify-between items-center px-4  text-gray-300  z-10 bg-[#2c47b41a]">
       <div>
         <h1 className="text-3xl font-bold"data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration="800"  data-aos-delay="200">Aman.</h1>
+     data-aos-anchor-placement="top-bottom" data-aos-duration="800"  data-aos-delay="200">
+      <Link className="cursor-pointer " to="intro" smooth={true} duration={500}>
+      Aj.
+        </Link>
+      </h1>
       </div>
 
       {/* Menu  */}
 
-      <ul className=" hidden md:flex">
+      <ul className=" hidden md:flex font-[12rem] font-bold ">
         <li data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="200"><Link className="hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 " to="home" smooth={true} duration={500}>
           Home
         </Link></li>
