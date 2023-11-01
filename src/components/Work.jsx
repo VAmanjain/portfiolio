@@ -10,7 +10,7 @@ const Work = () => {
   
   return (
     <div name='work' className='w-full h-auto my-auto text-gray-300 '>
-      <div className='container w-full h-screen mx-auto p-4 flex flex-col justify-center w-full h-full pt-[5rem] tablet:pt-2'>
+      <div className='container mx-auto p-4 flex flex-col justify-center w-full h-full pt-[5rem] tablet:pt-2'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
             Work
