@@ -4,19 +4,15 @@ const Contacts = () => {
   return (
     <div
       name="contact"
-      className="w-full h-auto   flex justify-center items-center p-4 text-gray-700 py-10 "
+      className="w-full h-auto   flex justify-center items-center p-4 text-gray-700 py-10  "
     >
       <form
         method="POST"
         action="https://getform.io/f/3a91ce58-1c8a-4b95-9309-7c281be8e257"
-        className=" flex flex-col max-w-[600px] w-full my-auto"
+        className=" flex flex-col max-w-[600px]  my-auto border border-pink-600 border-spacing-6 border-2 rounded px-4 py-4"
       >
         <div
-          className="pb-8 "
-          data-aos="fade-right"
-          data-aos-duration="1200"
-          data-aos-delay="200"
-        >
+          className="pb-8 ">
           <p className=" text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
           </p>
@@ -46,8 +42,8 @@ const Contacts = () => {
           className="bg-[#ccd6f6] p-2"
           name="message"
           placeholder="Message"
-          cols="30"
-          rows="10"
+          cols="20"
+          rows="5"
           data-aos="fade-right"
           data-aos-duration="1200"
           data-aos-delay="600"

@@ -2,6 +2,7 @@ import React from 'react'
 import {BiChevronDown} from 'react-icons/bi'
 import {Link} from 'react-scroll'
 
+
 const Intro = () => {
   return (
     <div className='h-screen flex justify-center items-center' name='intro' >

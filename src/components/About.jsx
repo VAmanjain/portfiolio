@@ -2,10 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-auto md:h-screen  text-gray-300 pb-4">
-      <div className="flex flex-col justify-center items-center w-full h-full pt-[18rem] md:pt-2 ">
-        <div className="max-w-[1000px] w-full  grid grid-cols-2 gap-8 ">
-          <div className="sm:text-right pb-8 pl-4 "data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="200">
+    <div name="about" className="w-full h-auto tablet:h-screen  text-gray-300 pb-4">
+      <div className="flex flex-col justify-center items-center w-full h-full pt-[18rem] tablet:pt-2 ">
+        <div className=" w-full  grid grid-cols-2 gap-8 ">
+          <div className="tablet:text-right pb-8 pl-4 "data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="200">
             <p className="text-6xl font-bold inline border-b-4 border-pink-600  " >
               About
             </p>
@@ -13,8 +13,8 @@ const About = () => {
           <div></div>
         </div>
         <div className="max-w-[1060px]
-         w-full grid sm:grid-cols-2  gap-8 px-4  ">
-          <div className="sm:text-right text-2xl sm:text-3xl md:text-4xl font-bold "data-aos="fade-right" data-aos-duration="1200"  data-aos-delay="350">
+         w-full grid tablet:grid-cols-2  gap-8 px-4  ">
+          <div className="tablet:text-right text-2xl tablet:text-3xl tablet:text-4xl font-bold "data-aos="fade-right" data-aos-duration="1200"  data-aos-delay="350">
             <p>
               Hi, I'm Aman Jain, nice to meet you . Please take a look around.
             </p>

@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Contacts from "./components/Contacts";
+import Credit from "./components/Credit";
 import Home from "./components/Home";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
@@ -17,6 +18,7 @@ function App() {
 <Skills/>
 <Work/>
 <Contacts/>
+<Credit/>
     </div>
   );
 }
