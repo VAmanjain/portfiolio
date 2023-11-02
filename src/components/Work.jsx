@@ -10,7 +10,7 @@ const Work = () => {
   
   return (
     <div name='work' className='w-full h-auto my-auto text-gray-300 '>
-      <div className='container mx-auto p-4 flex flex-col justify-center  pt-[5rem] tablet:pt-2'>
+      <div className='container mx-auto p-4 flex flex-col justify-center  pt-[5rem] tablet:pt-[90px]'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
             Work
@@ -19,7 +19,7 @@ const Work = () => {
         </div>
 
 {/* container for projects */}
-<div className="grid:grid-cols-2 tablet:grid-cols-3 gap-4">
+<div className="grid grid-cols-2 tablet:grid-cols-3 gap-4 ">
           
           {/* Gird Item */}
           {project.map((item, index) => (
@@ -27,7 +27,7 @@ const Work = () => {
     key={index}
     style={{ backgroundImage: `url(${item.image})` }}
     className="shadow-lg shadow-[#040c16] group container rounded-tablet 
-              flex justify-center text-center items-center mx-auto content-div max-w-tablet"
+              flex justify-center text-center items-center mx-auto content-div max-w-tablet rounded-md "
               data-aos="fade-down" data-aos-duration="1200"  data-aos-delay={item.delay}
   >
     {/* Hover effect for images */}
@@ -58,8 +58,6 @@ const Work = () => {
     </div>
   </div>
 ))}
-
-
 </div>
       </div>
     </div>

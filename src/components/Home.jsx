@@ -1,6 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import Image from "../assests/my.png";
+import Image from "../assests/myAvatar.png"
 
 const Home = () => {
   return (
@@ -13,14 +13,14 @@ const Home = () => {
             <img
               src={Image}
               alt="profile"
-              className="w-[12rem]  justify-center mx-auto my-[2rem] items-center  shadow tablet:w-[15rem] lg:w-[20rem] tablet:shadow-[#dbdce7] tablet: w-[15rem]  mt-10 lg:hover:w-[25rem]  duration-600 transform-[ease-in-out]   "
+              className="  w-[15rem]  justify-center mx-auto my-[2rem] items-center  shadow tablet:w-[15rem] lg:w-[20rem] tablet:shadow-[#dbdce7] tablet: w-[15rem]  mt-10 lg:hover:w-[25rem]  duration-600 transform-[ease-in-out] overflow-scroll  "
               style={{ borderRadius: "50%" }}
             />
           </div>
 
           <div className="text-left ">
             <p
-              className="text-[0.8rem] tablet:text-[1.2rem] text-pink-600 z-20"
+              className="text-[0.8rem] tablet:text-[1.2rem] text-[#FF0066] z-20"
              >
               Hi, my name is
             </p>

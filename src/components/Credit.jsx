@@ -7,13 +7,13 @@ import { Link } from "react-scroll";
 
 const Credit = () => {
   return (
-    <div className="w-full h-[7rem] tablet:h-[4rem] bg-[#002d53] px-6 grid grid-cols-1 tablet:flex table:justify-center tablet:items-center">
+    <div className="w-full h-[7rem] tablet:h-[4rem] bg-[#715df2]  px-6 grid grid-cols-1 tablet:flex table:justify-center tablet:items-center">
       <div className="w-full my-2 flex  justify-center items-center text-white font-semibold  tablet:w-[50%] tablet:justify-start  ">
         <h2>Designed by </h2> 
         <h2 className="px-1 font-semibold" style={{ fontSize: "1.3rem" }}>
           <AiOutlineCopyrightCircle />
         </h2>
-        <h2 className="text-pink-600">
+        <h2 className="">
           <a href="https://github.com/VAmanjain/portfiolio">Aman Jain</a>
         </h2>
       </div>

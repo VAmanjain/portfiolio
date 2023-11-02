@@ -9,7 +9,7 @@ const Contacts = () => {
       <form
         method="POST"
         action="https://getform.io/f/3a91ce58-1c8a-4b95-9309-7c281be8e257"
-        className=" flex flex-col max-w-[600px]  my-auto border border-pink-600 border-spacing-6 border-2 rounded px-4 py-4"
+        className=" flex flex-col max-w-[600px]   pt-[90px]"
       >
         <div
           className="pb-8 ">
