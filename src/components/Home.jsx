@@ -20,12 +20,12 @@ const Home = () => {
 
           <div className="text-left ">
             <p
-              className="text-[0.8rem] tablet:text-[1.2rem] text-[#FF0066] z-20"
+              className="text-[0.8rem] tablet:text-[1.2rem]  text-[#ccd6f6] z-20"
              >
               Hi, my name is
             </p>
             <h1
-              className=" text-[2rem]   tablet:text-4xl tablet:text-6xl font-bold text-[#ccd6f6]  "
+              className=" text-[2rem]  text-[#FF0066]   tablet:text-4xl tablet:text-6xl font-bold  "
             >
               Aman Jain
             </h1>

@@ -7,7 +7,7 @@ const About = () => {
         <div className=" w-full  grid grid-cols-2 gap-8 ">
           <div className="tablet:text-right pb-8 pl-4 "data-aos="fade-down" data-aos-duration="1200"  data-aos-delay="200">
             <p className="text-6xl font-bold inline border-b-4 border-pink-600  " >
-              About
+              Who am I?
             </p>
           </div>
           <div></div>

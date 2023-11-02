@@ -1,12 +1,15 @@
 import React from 'react'
-import Intro from './Intro'
+
 import Home from './Home'
+import About from './About'
 
 const Hero = () => {
   return (
     <div>
-        <Intro/>
+       
         <Home/>
+        <About/>
+    
     </div>
   )
 }

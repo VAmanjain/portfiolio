@@ -2,14 +2,13 @@ import React from "react";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { Link } from "react-scroll";
+import { SiBento } from "react-icons/si";
 
 const Credit = () => {
   return (
     <div className="w-full h-[7rem] tablet:h-[4rem] bg-[#715df2]  px-6 grid grid-cols-1 tablet:flex table:justify-center tablet:items-center">
       <div className="w-full my-2 flex  justify-center items-center text-white font-semibold  tablet:w-[50%] tablet:justify-start  ">
-        <h2>Designed by </h2> 
+        <h2>Designed by </h2>
         <h2 className="px-1 font-semibold" style={{ fontSize: "1.3rem" }}>
           <AiOutlineCopyrightCircle />
         </h2>
@@ -44,6 +43,15 @@ const Credit = () => {
               target="_blank"
             >
               <BsInstagram size={20} />
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex justify-between items-center "
+              href="https://bento.me/vamanjain"
+              target="_blank"
+            >
+              <SiBento size={20} />
             </a>
           </li>
         </ul>
