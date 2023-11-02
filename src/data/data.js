@@ -1,7 +1,7 @@
-import flex from "../assests/projects/flex.png"
-import game from "../assests/projects/game.png"
-import travel from "../assests/projects/travel.png"
-import news from "../assests/projects/news.png"
+import flex from "../assests/projects/bootsrap.png"
+import game from "../assests/projects/Funbar.png"
+import travel from "../assests/projects/Dream.png"
+import news from "../assests/projects/new.com.png"
 import Hotel from "../assests/projects/Hotel.png"
 
 export const data=[
