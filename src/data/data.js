@@ -2,6 +2,7 @@ import flex from "../assests/projects/flex.png"
 import game from "../assests/projects/game.png"
 import travel from "../assests/projects/travel.png"
 import news from "../assests/projects/news.png"
+import Hotel from "../assests/projects/Hotel.png"
 
 export const data=[
     {
@@ -36,6 +37,14 @@ export const data=[
         image:news,
         github:"https://github.com/VAmanjain/News.com",
         live:"https://news-com.netlify.app/",
+        delay:600
+    },
+    {
+        id:5,
+        name:"Hotel Skyline",
+        image:Hotel,
+        github:"https://github.com/devashishsoni98/Web-Based-Skyline-Management-System",
+        live:"https://skyline1.netlify.app/",
         delay:600
     },
 

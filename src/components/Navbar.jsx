@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
 
       {/* Mebile menu  */}
-      <ul className={!nav ? "hidden" : "  absolute top-0 left-0 w-full h-screen  bg-[#0a192f] flex flex-col justify-center items-center "}>
+      <ul className={!nav ? "hidden" : "  absolute top-0 left-0 w-full h-screen  bg-[#0b0033] flex flex-col justify-center items-center "}>
         <li className="py-4 text-4xl"><Link className="hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 " onClick={handleClick} to="home"  data-aos="fade-right" >
           Home
         </Link></li>
