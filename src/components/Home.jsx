@@ -1,6 +1,7 @@
 import React from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import Image from "../assests/myAvatar.png"
+import{motion} from "framer-motion"
+
 
 const Home = () => {
   return (
@@ -10,11 +11,15 @@ const Home = () => {
       <div className="px-4 tablet:px-8 flex flex-cols-2 justify-center items-center h-full ">
         <div className=" w-full h-screen justify-start items-center grid  tablet:grid-cols-2 gap-2">
           <div className="w-full justify-center items-center py-[1.7rem] ">
-            <img
+            <motion.img
               src={Image}
               alt="profile"
               className="  w-[15rem]  justify-center mx-auto my-[2rem] items-center  shadow tablet:w-[15rem] lg:w-[20rem] tablet:shadow-[#dbdce7] tablet: w-[15rem]  mt-10 lg:hover:w-[25rem]  duration-600 transform-[ease-in-out] overflow-scroll  "
               style={{ borderRadius: "50%" }}
+              whileHover={{
+                rotateY:360,
+                transition:{duration:0.5 , times:1},
+              }}
             />
           </div>
 
