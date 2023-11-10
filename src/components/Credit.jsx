@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { SiBento } from "react-icons/si";
 
