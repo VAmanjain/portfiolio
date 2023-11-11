@@ -15,7 +15,11 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
 
-    extend: {},
+    extend: {
+      backdropBlur: {
+        xs: '2px',
+      }
+    },
   },
   plugins: [],
 }

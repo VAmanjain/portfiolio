@@ -38,21 +38,16 @@ const Home = () => {
           </div>
 
           <div className="text-left ">
-            <p className="text-[0.8rem] tablet:text-[1.2rem]  text-[#ccd6f6] z-20">
+            <p className="text-[0.8rem] tablet:text-[2rem] mb-2  text-[#ccd6f6] z-20">
               Hi, my name is
             </p>
-            <h1 className=" text-[2rem]  text-[#FF0066]   tablet:text-4xl tablet:text-6xl font-bold  ">
+            <h1 className=" text-[2rem]  text-[#FF0066]  mb-4 tablet:text-4xl tablet:text-[4rem] font-bold  ">
               Aman Jain
             </h1>
-            <h2 className="text-xl tablet:text-2xl tablet:text-5xl font-bold text-[#8892b0]">
+            <h2 className="text-xl tablet:text-2xl tablet:text-4xl font-bold text-[#8892b0]">
               I'm Front-end Developer
             </h2>
-            <p className="text-[#8892b0] py-4 max-w-[700px] text-justify ">
-              Hi there! 👋 I love making websites look awesome and work super
-              tabletoothly. Take a peek inside and see how I turn ideas into
-              websites that are easy to use, pretty to look at, and work great
-              on any device. Let's dive into my web world together! 😄🌐
-            </p>
+           
             <div></div>
           </div>
         </div>

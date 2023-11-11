@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed  w-screen h-[70px] flex justify-between items-center px-4  text-gray-300  z-10 bg-[#2c47b41a]">
+    <div className="fixed  w-screen h-[70px] flex justify-between items-center px-4  text-gray-300  z-10 backdrop-blur-xs">
       <div>
         <h1 className="text-3xl font-bold">
       <Link className="cursor-pointer " to="intro" >
@@ -20,7 +20,7 @@ const Navbar = () => {
 
       {/* Menu  */}
 
-      <ul className=" hidden tablet:flex font-[12rem] font-bold ">
+      <ul className=" hidden tablet:flex text-[1.2rem] font-bold ">
         <li data-aos="fade-down" ><Link className="hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 " to="*" >
           Home
         </Link></li>
