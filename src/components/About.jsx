@@ -13,13 +13,13 @@ const About = () => {
           </div>
           <div></div>
         </div>
-        <div className="max-w-[1060px]
+        <div className="container
          w-full  grid tablet:grid-cols-2  gap-8 px-4  ">
-          <div className="flex justify-center items-center  m-auto">
+          <div className="  flex justify-center items-center  m-auto">
             <p className=" text-[1rem] tablet:text-[1.2rem] text-justify ">
 I'm Aman , a passionate Front-End Developer with a knack for turning ideas into digital masterpieces. I've embarked on a thrilling web development journey, combining creativity and coding to craft user-friendly, visually appealing websites. When I'm not at my computer, I enjoy outdoor adventures, and the occasional video game. I'm here to collaborate and bring your web dreams to life, so let's create something awesome together! 👨‍💻✨</p>
           </div>
-          <div className=" flex justify-center items-center tablet:text-right text-2xl tablet:text-4xl font-bold">
+          <div className="  flex justify-center items-center tablet:text-right text-2xl tablet:text-4xl font-bold">
            <img src={Who} width={400} />
           </div>
         </div>

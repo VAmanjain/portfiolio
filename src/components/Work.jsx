@@ -3,9 +3,6 @@ import { data } from "../data/data.js";
 import { BsArrowUpRight } from "react-icons/bs";
 import { BiGitBranch } from "react-icons/bi";
 
-
-
-
 const Work = () => {
   // projects file
   const project = data;
@@ -22,45 +19,50 @@ const Work = () => {
         </div>
 
         {/* container for projects */}
-        <div className="  grid grid-cols-1 gap-6 h-auto pb-16   ">
+        <div className="  grid grid-cols-1 gap-6 h-auto pb-16 mx-[0.5rem]  ">
           {/* Gird Item */}
           {project.map((item, index) => (
-            
-            <div className="w-full py-[2px] border border-[#FF0066] rounded-[12px]  ">
+            <div className="w-full py-[2px] border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  ">
               {item.id % 2 !== 0 ? (
                 <>
-                  <div className="grid grid-cols-1 tablet:grid-cols-2 py-[16px] px-[1rem]  ">
+                  <div className="grid grid-cols-1 tablet:grid-cols-2 py-[16px] px-[1rem]   ">
                     <div className=" w-full h-full tablet:h-auto tablet:px-5 py-3 ">
-                      <div className="overflow-hidden  tablet:h-auto  rounded-[8px]">
-
-                      <img src={item.image} alt="" className="  " />
+                      <div className="overflow-hidden  tablet:h-auto rounded tablet:rounded-[8px]">
+                        <img src={item.image} alt="" className="  " />
                       </div>
                     </div>
                     <div className="py-1 ">
                       <h1 className="text-center text-[1.7rem] font-bold ">
                         {item.name}
                       </h1>
-                      <p className="text-justify pt-3 tablet:pt-1 text-[0.9rem] tablet:text-[1rem] ">{item.desc}</p>
+                      <p className="text-justify pt-3 tablet:pt-1 text-[0.9rem] tablet:text-[1rem] ">
+                        {item.desc}
+                      </p>
                       <div className="pt-1">
                         <span className="font-bold py-2">Tackstack:</span>
-                        <ul className="flex px-2 pb-2" >
-                          {item.technologies && item.technologies.map((techs,index)=>(
-                            <li key={index} className="w-[40px] rounded-[50%]  p-2 ">
-                              <img src={techs} alt="" className=" "  />
+                        <ul className="flex px-2 pb-2">
+                          {item.technologies &&
+                            item.technologies.map((techs, index) => (
+                              <li
+                                key={index}
+                                className="w-[40px] rounded-[50%]  p-2 "
+                              >
+                                <img src={techs} alt="" className=" " />
                               </li>
-                          ))}
+                            ))}
                         </ul>
                       </div>
-                      <div className="flex pt-1 w-full justify-around items-center  ">
-                        <div className="border bg-[#FF0066] border-[#FF0066] px-5 py-1 rounded h-[2rem] ">
+                      <div className="flex pt-1 w-full justify-center  items-center  ">
+                        <div className="border bg-[#FF0066] border-[#FF0066] mx-4 px-5 py-1 rounded h-[2rem] ">
                           <a
                             href={item.github}
                             className="flex items-center justify-center "
                           >
-                            Github<BiGitBranch/>
+                            Github
+                            <BiGitBranch />
                           </a>
                         </div>
-                        <div className="border bg-[#FF0066] border-[#FF0066] px-5 py-1 rounded">
+                        <div className="border bg-[#FF0066] border-[#FF0066] mx-4 px-5 py-1 rounded">
                           <a
                             href={item.live}
                             className="flex items-center justify-center "
@@ -77,34 +79,41 @@ const Work = () => {
                   <div className="grid grid-cols-1 grid tablet:grid-cols-2 py-[16px] px-[1rem]   ">
                     <div className=" w-full h-full tablet:h-auto tablet:px-5 py-3 tablet:order-last ">
                       <div className="overflow-hidden  tablet:h-auto  rounded-[8px]">
-                      <img src={item.image} alt="" className="  " />
+                        <img src={item.image} alt="" className="  " />
                       </div>
                     </div>
                     <div className="py-1 ">
                       <h1 className="text-center text-[1.7rem] font-bold ">
                         {item.name}
                       </h1>
-                      <p className="text-justify pt-3 tablet:pt-1 text-[0.9rem] tablet:text-[1rem] ">{item.desc}</p>
+                      <p className="text-justify pt-3 tablet:pt-1 text-[0.9rem] tablet:text-[1rem] ">
+                        {item.desc}
+                      </p>
                       <div className="pt-1">
                         <span className="font-bold py-2">Tackstack:</span>
-                        <ul className="flex px-2 pb-2" >
-                          {item.technologies && item.technologies.map((techs,index)=>(
-                            <li key={index} className="w-[40px] rounded-[50%] p-2 ">
-                              <img src={techs} alt="" className=" "  />
+                        <ul className="flex px-2 pb-2">
+                          {item.technologies &&
+                            item.technologies.map((techs, index) => (
+                              <li
+                                key={index}
+                                className="w-[40px] rounded-[50%] p-2 "
+                              >
+                                <img src={techs} alt="" className=" " />
                               </li>
-                          ))}
+                            ))}
                         </ul>
                       </div>
-                      <div className="flex pt-1 w-full justify-around items-center  ">
-                        <div className="border bg-[#FF0066] border-[#FF0066] px-5 py-1 rounded h-[2rem] ">
+                      <div className="flex pt-1 w-full justify-center items-center  ">
+                        <div className="border bg-[#FF0066] border-[#FF0066] mx-4 px-5 py-1 rounded h-[2rem] ">
                           <a
                             href={item.github}
                             className="flex items-center justify-center "
                           >
-                            Github<BiGitBranch/>
+                            Github
+                            <BiGitBranch />
                           </a>
                         </div>
-                        <div className="border bg-[#FF0066] border-[#FF0066] px-5 py-1 rounded">
+                        <div className="border bg-[#FF0066] border-[#FF0066] mx-4 px-5 py-1 rounded">
                           <a
                             href={item.live}
                             className="flex items-center justify-center "
