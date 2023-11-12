@@ -25,7 +25,7 @@ const Navbar = () => {
       <ul className=" hidden tablet:flex text-[1.2rem] font-bold ">
         <li data-aos="fade-down">
           <Link
-            className=" flex justify-start items-center  hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 "
+            className=" flex justify-start items-center  hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
             to="*"
           >
             <BiHomeAlt className="mx-2" />
@@ -34,7 +34,7 @@ const Navbar = () => {
         </li>
         <li data-aos="fade-down">
           <Link
-            className=" flex justify-start items-center hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 "
+            className=" flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
             to="/skills"
           >
             <HiOutlineDesktopComputer className="mx-2" />
@@ -43,7 +43,7 @@ const Navbar = () => {
         </li>
         <li data-aos="fade-down">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 "
+            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
             to="/work"
           >
             <AiOutlineFundProjectionScreen className="mx-2" /> Project
@@ -51,7 +51,7 @@ const Navbar = () => {
         </li>
         <li data-aos="fade-down">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 "
+            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
             to="/contact"
           >
             <RiContactsLine className="mx-2" /> Contact
@@ -74,7 +74,7 @@ const Navbar = () => {
       >
         <li className="py-4 text-4xl">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 "
+            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
             onClick={handleClick}
             to="home"
             data-aos="fade-right"
@@ -84,7 +84,7 @@ const Navbar = () => {
         </li>
         <li className="py-4 text-4xl">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 "
+            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
             onClick={handleClick}
             to="skills"
             data-aos="fade-right"
@@ -94,7 +94,7 @@ const Navbar = () => {
         </li>
         <li className="py-4 text-4xl">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 "
+            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
             onClick={handleClick}
             to="work"
             data-aos="fade-right"
@@ -105,7 +105,7 @@ const Navbar = () => {
 
         <li className="py-4 text-4xl">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-pink-600 duration-100 active:text-pink-600 "
+            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
             onClick={handleClick}
             to="contact"
             data-aos="fade-right"

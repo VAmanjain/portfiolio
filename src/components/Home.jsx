@@ -19,32 +19,32 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-auto flex justify-center items-center tablet:p-4 text-gray-700 py-10  "
+      className="w-full h-auto tablet:h-screen flex justify-center items-center tablet:p-4 text-gray-700 py-10  "
     >
       {/* Container  */}
 
       <div className="px-4 tablet:px-8 flex flex-cols-2 justify-center items-center h-full ">
-        <div className=" w-full h-screen justify-start items-center grid  tablet:grid-cols-2 gap-12">
+        <div className=" w-full h-screen justify-start items-center grid  tablet:grid-cols-2  tablet:gap-12">
           <div className="w-full justify-center items-center py-[1.7rem] ">
             <Tilt options={defaultOptions}>
               {" "}
               <img
                 src={Image}
                 alt="profile"
-                className="  w-[15rem]  justify-center mx-auto my-[2rem] items-center  shadow tablet:w-[15rem]  tablet:shadow-[#dbdce7]  "
+                className="  w-[12rem]  justify-center mx-auto table:my-[2rem] items-center  shadow tablet:w-[15rem]  tablet:shadow-[#dbdce7]  "
                 style={{ borderRadius: "50%" }}
               />
             </Tilt>
           </div>
 
           <div className="text-left ">
-            <p className="text-[0.8rem] tablet:text-[2rem] mb-2  text-[#ccd6f6] z-20">
+            <p className="text-[1.2rem] tablet:text-[2.5rem]   text-[#ccd6f6] z-20">
               Hi, my name is
             </p>
-            <h1 className=" text-[2rem] tablet:mb-8 text-[#FF0066]  mb-4 tablet:text-4xl tablet:text-[4rem] font-bold  ">
+            <h1 className=" text-[2.2rem] tablet:mb-8 text-[#FF0066]  mb-4 tablet:text-[4rem] font-bold  ">
               AMAN JAIN
             </h1>
-            <h2 className="text-xl  tablet:text-2xl tablet:text-4xl font-bold text-[#ededed]">
+            <h2 className="text-[1.3rem] tablet:text-[2.5rem] font-bold text-[#ededed]">
               I'm
               <span className=" text-[#ff0066] px-2 ">Front-end Developer</span>
             </h2>

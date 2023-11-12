@@ -57,7 +57,7 @@ const Skills = () => {
       {/* container  */}
       <div className="container mx-auto p-4 flex flex-col w-full h-full pt-[90px]">
         <div className="pb-4">
-          <p className="text-4xl font-bold inline border-b-4 border-[#FF0066]">
+          <p className="text-4xl font-bold inline border-b-4 border-[#FF0066] rounded">
             Skills
           </p>
           <p className="mt-4">// These are the technologies I have worked with</p>
@@ -70,7 +70,7 @@ const Skills = () => {
               <div key={tech.id}>
                 <div className="flex justify-center  ">
                   <motion.div
-                    className="w-[12rem] h-[10rem] my-4 rounded shadow-md shadow-[#000000] font-semibold border border-[#FF0066] border-2 hover:  skills"
+                    className="w-[12rem] h-[10rem] my-4 rounded shadow-md shadow-[#000000] font-semibold border border-[#FF0066] border-2 hover:backdrop-blur-2xl  skills"
                     whileHover={{
                       scale: 1.05,
                       transition: { duration: 0.2 },

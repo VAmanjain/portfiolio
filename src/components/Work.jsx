@@ -22,8 +22,8 @@ const Work = () => {
         <div className="  grid grid-cols-1 gap-6 h-auto pb-16 mx-[0.5rem]  ">
           {/* Gird Item */}
           {project.map((item, index) => (
-            <div className="w-full py-[2px] border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  ">
-              {item.id % 2 !== 0 ? (
+            <div className="w-full py-[2px] border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  hover:backdrop-blur-2xl hover:scale-[1.01] duration-300  ">
+              {item.id % 2 !== 0 ? ( 
                 <>
                   <div className="grid grid-cols-1 tablet:grid-cols-2 py-[16px] px-[1rem]   ">
                     <div className=" w-full h-full tablet:h-auto tablet:px-5 py-3 ">
