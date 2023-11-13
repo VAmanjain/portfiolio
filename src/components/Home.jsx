@@ -2,6 +2,7 @@ import React from "react";
 import Image from "../assests/myAvatar.png";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
@@ -16,16 +17,22 @@ const defaultOptions = {
 };
 
 const Home = () => {
+
+  const [text] = useTypewriter({
+    words: [ "a Front end Developer","a Student", "a Designer"],
+    loop: {},
+  });
+
   return (
     <div
       name="home"
-      className="w-full h-auto tablet:h-screen flex justify-center items-center tablet:p-4 text-gray-700 py-10  "
+      className="w-[100%] h-auto tablet:h-screen flex justify-center items-center tablet:p-4 text-gray-700 py-10  "
     >
       {/* Container  */}
 
-      <div className="px-4 tablet:px-8 flex flex-cols-2 justify-center items-center h-full ">
-        <div className=" w-full h-screen justify-start items-center grid  tablet:grid-cols-2  tablet:gap-12">
-          <div className="w-full justify-center items-center py-[1.7rem] ">
+      <div className="px-4 tablet:px-8 flex flex-cols-2 justify-center items-center w-full h-full ">
+        <div className=" w-full mx-auto h-screen justify-start items-center grid  tablet:grid-cols-2  tablet:gap-12">
+          <div className="w-full mx-auto justify-center items-center py-[1.7rem] ">
             <Tilt options={defaultOptions}>
               {" "}
               <img
@@ -46,10 +53,10 @@ const Home = () => {
             </h1>
             <h2 className="text-[1.3rem] tablet:text-[2.5rem] font-bold text-[#ededed]">
               I'm
-              <span className=" text-[#ff0066] px-2 ">Front-end Developer</span>
+              <span className=" text-[#ff0066] px-2 ">{text}<Cursor cursorStyle="|"/> </span>
             </h2>
 
-            <div></div>
+            
           </div>
         </div>
       </div>

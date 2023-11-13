@@ -2,6 +2,7 @@ import React from "react";
 import { data } from "../data/data.js";
 import { BsArrowUpRight } from "react-icons/bs";
 import { BiGitBranch } from "react-icons/bi";
+import {motion} from 'framer-motion'
 
 const Work = () => {
   // projects file
@@ -22,10 +23,23 @@ const Work = () => {
         <div className="  grid grid-cols-1 gap-6 h-auto pb-16 mx-[0.5rem]  ">
           {/* Gird Item */}
           {project.map((item, index) => (
-            <div className="w-full py-[2px] border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  hover:backdrop-blur-2xl hover:scale-[1.01] duration-300  ">
+            <div className="w-full py-[2px] ">
               {item.id % 2 !== 0 ? ( 
-                <>
-                  <div className="grid grid-cols-1 tablet:grid-cols-2 py-[16px] px-[1rem]   ">
+                <motion.div className="border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  hover:backdrop-blur-2xl hover:scale-[1.01] duration-300  "
+                initial={{
+                  x:75,
+                  opacity:0.5
+                }}
+                whileInView={{
+                  x:0,
+                  opacity:1
+                }}
+                viewport={{ once: true }}
+            transition={{ duration: 0.75 }}>
+                  <motion.div className="grid grid-cols-1 tablet:grid-cols-2 py-[16px] px-[1rem] 
+                    "
+                   
+                    >
                     <div className=" w-full h-full tablet:h-auto tablet:px-5 py-3 ">
                       <div className="overflow-hidden  tablet:h-auto rounded tablet:rounded-[8px]">
                         <img src={item.image} alt="" className="  " />
@@ -72,10 +86,25 @@ const Work = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </>
+                  </motion.div>
+                </motion.div>
               ) : (
-                <>
+                < motion.div
+                className="border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  hover:backdrop-blur-2xl hover:scale-[1.01] duration-300  "
+                initial={{
+                  x:-100,
+                  opacity:0.5
+                }}
+                whileInView={{
+                  x:0,
+                  opacity:1
+                }}
+                transition={{
+                  duration:0.5,
+                  type:"just",
+                  Stiffness: 600
+                }}
+                >
                   <div className="grid grid-cols-1 grid tablet:grid-cols-2 py-[16px] px-[1rem]   ">
                     <div className=" w-full h-full tablet:h-auto tablet:px-5 py-3 tablet:order-last ">
                       <div className="overflow-hidden  tablet:h-auto  rounded-[8px]">
@@ -124,7 +153,7 @@ const Work = () => {
                       </div>
                     </div>
                   </div>
-                </>
+                </motion.div>
               )}
             </div>
           ))}
