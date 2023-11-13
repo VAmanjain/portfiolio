@@ -13,49 +13,49 @@ const tech = [
     id: 1,
     skill: "HTML5",
     image: AiOutlineHtml5,
-    duration:1,
+    duration: 1,
   },
   {
     id: 2,
     skill: "CSS",
     image: BiLogoCss3,
-    duration:1,
+    duration: 1,
   },
   {
     id: 3,
     skill: "JAVASCRIPT",
     image: DiJavascript1,
-    duration:1,
+    duration: 1,
   },
   {
     id: 4,
     skill: "BOOTSTRAP",
     image: FaBootstrap,
-    duration:1,
+    duration: 1,
   },
   {
     id: 5,
     skill: "SASS",
     image: FaSass,
-    duration:1,
+    duration: 1,
   },
   {
     id: 6,
     skill: "REACTJS",
     image: SiReact,
-    duration:1,
+    duration: 1,
   },
   {
     id: 7,
     skill: "TAILWIND",
     image: SiTailwindcss,
-    duration:1,
+    duration: 1,
   },
   {
     id: 8,
     skill: "GITHUB",
     image: AiFillGithub,
-    duration:1,
+    duration: 1,
   },
 ];
 
@@ -86,16 +86,16 @@ const Skills = () => {
                       transition: { duration: 0.2 },
                     }}
                     initial={{
-                      scaleZ:0.4,
-zoom:0.1,
+                      opacity: 0.0,
+                      scale: 0.1,
                     }}
                     transition={{
                       type: "spring",
-                      duration:techs.duration,
+                      duration: techs.duration,
                     }}
                     whileInView={{
-                 zoom:1,
-                      scaleZ:1,
+                      opacity: 1,
+                      scale: 1,
                     }}
                   >
                     <Icon size={100} className="py-4 mx-auto" />
