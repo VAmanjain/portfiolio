@@ -31,7 +31,7 @@ const Home = () => {
       {/* Container  */}
 
       <div className="px-4 tablet:px-8 flex flex-cols-2 justify-center items-center w-full h-full ">
-        <div className=" w-full mx-auto h-screen justify-start items-center grid  tablet:grid-cols-2  tablet:gap-12">
+        <div className=" w-full mx-auto h-screen justify-center items-center grid  tablet:grid-cols-2  ">
           <div className="w-full mx-auto justify-center items-center py-[1.7rem] ">
             <Tilt options={defaultOptions}>
               {" "}
@@ -44,7 +44,7 @@ const Home = () => {
             </Tilt>
           </div>
 
-          <div className="text-left ">
+          <div className=" text-center tablet:text-left w-full ">
             <p className="text-[1.2rem] tablet:text-[2.5rem]   text-[#ccd6f6] z-20">
               Hi, my name is
             </p>

@@ -5,6 +5,7 @@ import {  FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { SiBento } from "react-icons/si";
 import AboutImg from '../assests/AboutImg2.svg'
+import {motion} from 'framer-motion'
 
 const About = () => {
   return (
@@ -39,33 +40,69 @@ I'm Aman , a passionate Front-End Developer with a knack for turning ideas into 
             </div>
             <div className="flex justify-center items-center">
             <ul className="flex justify-start items-center ">
-              <li className=" w-[40px] h-[40px] mx-2 mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]  hover:bg-[#ff0066] hover:border-[#ff0066] hover:scale-110 duration-300 hover:shadow-tablet shadow-[#ff0066]-1/2">
+              <motion.li
+                 whileHover={{
+                  scale:1.1,
+                  backgroundColor:"#ff0066",
+                }}
+                whileTap={{
+                  scale:0.9,
+                  backgroundColor:"#ff0066",
+                }}
+              className=" w-[40px] h-[40px]  mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]">
                 <a href="https://github.com/VAmanjain" target="_blank">
                   <FiGithub size={20} />
                 </a>
-              </li>
-              <li className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]  hover:bg-[#ff0066] hover:border-[#ff0066] hover:scale-110 duration-300 hover:shadow-tablet shadow-[#ff0066]-1/2">
+              </motion.li>
+              <motion.li 
+                 whileHover={{
+                  scale:1.1,
+                  backgroundColor:"#ff0066",
+                }}
+                whileTap={{
+                  scale:0.9,
+                  backgroundColor:"#ff0066",
+                }}
+              className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
                 <a
                   href="https://www.linkedin.com/in/aman-jain-416321256"
                   target="_blank"
                 >
                   <FaLinkedin size={20} />
                 </a>
-              </li>
-              <li className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]  hover:bg-[#ff0066] hover:border-[#ff0066] hover:scale-110 duration-300 hover:shadow-tablet shadow-[#ff0066]-1/2">
+              </motion.li>
+              <motion.li
+                 whileHover={{
+                  scale:1.1,
+                  backgroundColor:"#ff0066",
+                }}
+                whileTap={{
+                  scale:0.9,
+                  backgroundColor:"#ff0066",
+                }}
+              className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
                 <a
                   href="https://instagram.com/iamanjain17?igshid=MzRlODBiNWFlZA=="
                   target="_blank"
                 >
                   <BsInstagram size={20} />
                 </a>
-              </li>
-              <li className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]  hover:bg-[#ff0066] hover:border-[#ff0066] hover:scale-110 duration-300 hover:shadow-tablet shadow-[#ff0066]-1/2">
+              </motion.li>
+              <motion.li
+                 whileHover={{
+                  scale:1.1,
+                  backgroundColor:"#ff0066",
+                }}
+                whileTap={{
+                  scale:0.9,
+                  backgroundColor:"#ff0066",
+                }}
+               className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
                 <a   href="https://bento.me/vamanjain"
               target="_blank">
                   <SiBento size={20} />
                 </a>
-              </li>
+              </motion.li>
             </ul>
             </div>
           </div>

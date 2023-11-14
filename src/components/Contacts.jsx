@@ -4,6 +4,7 @@ import {  FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { SiBento } from "react-icons/si";
 import ContactImg from '../assests/ConatctImg.svg'
+import {motion} from 'framer-motion'
 
 const Contacts = () => {
   return (
@@ -19,33 +20,69 @@ const Contacts = () => {
           <div className="pt-6">
             <h1 className="text-[1.2rem] font-semibold pb-5">Let's Connect:</h1>
             <ul className="flex justify-start items-center ">
-              <li className=" w-[40px] h-[40px] mx-2 mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]  hover:bg-[#ff0066] hover:border-[#ff0066] hover:scale-110 duration-300 hover:shadow-tablet shadow-[#ff0066]-1/2">
+              <motion.li
+                 whileHover={{
+                  scale:1.1,
+                  backgroundColor:"#ff0066",
+                }}
+                whileTap={{
+                  scale:0.9,
+                  backgroundColor:"#ff0066",
+                }}
+              className=" w-[40px] h-[40px]  mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]">
                 <a href="https://github.com/VAmanjain" target="_blank">
                   <FiGithub size={20} />
                 </a>
-              </li>
-              <li className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]  hover:bg-[#ff0066] hover:border-[#ff0066] hover:scale-110 duration-300 hover:shadow-tablet shadow-[#ff0066]-1/2">
+              </motion.li>
+              <motion.li 
+                 whileHover={{
+                  scale:1.1,
+                  backgroundColor:"#ff0066",
+                }}
+                whileTap={{
+                  scale:0.9,
+                  backgroundColor:"#ff0066",
+                }}
+              className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
                 <a
                   href="https://www.linkedin.com/in/aman-jain-416321256"
                   target="_blank"
                 >
                   <FaLinkedin size={20} />
                 </a>
-              </li>
-              <li className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]  hover:bg-[#ff0066] hover:border-[#ff0066] hover:scale-110 duration-300 hover:shadow-tablet shadow-[#ff0066]-1/2">
+              </motion.li>
+              <motion.li
+                 whileHover={{
+                  scale:1.1,
+                  backgroundColor:"#ff0066",
+                }}
+                whileTap={{
+                  scale:0.9,
+                  backgroundColor:"#ff0066",
+                }}
+              className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
                 <a
                   href="https://instagram.com/iamanjain17?igshid=MzRlODBiNWFlZA=="
                   target="_blank"
                 >
                   <BsInstagram size={20} />
                 </a>
-              </li>
-              <li className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]  hover:bg-[#ff0066] hover:border-[#ff0066] hover:scale-110 duration-300 hover:shadow-tablet shadow-[#ff0066]-1/2">
+              </motion.li>
+              <motion.li
+                 whileHover={{
+                  scale:1.1,
+                  backgroundColor:"#ff0066",
+                }}
+                whileTap={{
+                  scale:0.9,
+                  backgroundColor:"#ff0066",
+                }}
+               className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
                 <a   href="https://bento.me/vamanjain"
               target="_blank">
                   <SiBento size={20} />
                 </a>
-              </li>
+              </motion.li>
             </ul>
             <div className="mt-[2rem]">
               <img src={ContactImg} alt="" style={{width:"20rem"}} />
@@ -84,9 +121,18 @@ const Contacts = () => {
                 cols="20"
                 rows="5"
               ></textarea>
-              <button className="text-white text-[1.2rem] border-2 hover:bg-[#ff0066] hover:scale-110 duration-300 duration-300 py-1 px-4 mx-auto my-4 flex items-center rounded ">
+              <motion.button 
+              whileHover={{
+                scale:1.1,
+                backgroundColor:"#ff0066",
+              }}
+              whileTap={{
+                scale:0.9,
+                backgroundColor:"#ff0066",
+              }}
+              className="text-white text-[1.2rem] border-2 py-1 px-4 mx-auto my-4 flex items-center rounded ">
                 Submit
-              </button>
+              </motion.button>
             </form>
           </div>
         </div>
