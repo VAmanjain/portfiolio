@@ -63,7 +63,7 @@ I'm Aman , a passionate Front-End Developer with a knack for turning ideas into 
                   scale:0.9,
                   backgroundColor:"#ff0066",
                 }}
-              className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
+              className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%] ">
                 <a
                   href="https://www.linkedin.com/in/aman-jain-416321256"
                   target="_blank"
@@ -80,7 +80,7 @@ I'm Aman , a passionate Front-End Developer with a knack for turning ideas into 
                   scale:0.9,
                   backgroundColor:"#ff0066",
                 }}
-              className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
+              className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]">
                 <a
                   href="https://instagram.com/iamanjain17?igshid=MzRlODBiNWFlZA=="
                   target="_blank"
@@ -97,7 +97,7 @@ I'm Aman , a passionate Front-End Developer with a knack for turning ideas into 
                   scale:0.9,
                   backgroundColor:"#ff0066",
                 }}
-               className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] ">
+               className=" w-[40px] h-[40px] mx-2 flex justify-center items-center  border border-[#ededed] rounded-[50%]">
                 <a   href="https://bento.me/vamanjain"
               target="_blank">
                   <SiBento size={20} />
