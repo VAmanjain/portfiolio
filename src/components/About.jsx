@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-auto tablet:h-screen  text-gray-300 pb-4">
+    <div name="about" className="w-full h-auto min-h-screen  tablet:h-screen  text-gray-300 pb-4">
       <div className="flex flex-col justify-center items-center w-full h-full pt-[3rem] tablet:pt-2 ">
         <div className=" w-full  grid grid-cols-1 tablet:grid-cols-2 gap-8 ">
           <div className="tablet:text-right pb-2 tablet:pb-8 pl-4 ">

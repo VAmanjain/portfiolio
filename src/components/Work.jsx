@@ -10,7 +10,7 @@ const Work = () => {
   //setProject(data);
 
   return (
-    <div name="work" className="w-full h-auto my-auto text-gray-300 ">
+    <div name="work" className="w-full h-auto my-auto min-h-screen  text-gray-300 ">
       <div className="container mx-auto p-4 flex flex-col justify-center  pt-[5rem] tablet:pt-[90px]">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-[#FF0066]">
@@ -25,7 +25,7 @@ const Work = () => {
           {project.map((item, index) => (
             <div className="w-full py-[2px] ">
               {item.id % 2 !== 0 ? ( 
-                <motion.div className="border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  hover:backdrop-blur-2xl hover:scale-[1.01] duration-300  "
+                <div className="border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  hover:backdrop-blur-2xl hover:scale-[1.01] duration-300  "
                 initial={{
                   x:75,
                   opacity:0.5
@@ -36,7 +36,7 @@ const Work = () => {
                 }}
                 viewport={{ once: true }}
             transition={{ duration: 0.75 }}>
-                  <motion.div className="grid grid-cols-1 tablet:grid-cols-2 py-[16px] px-[1rem] 
+                  <div className="grid grid-cols-1 tablet:grid-cols-2 py-[16px] px-[1rem] 
                     "
                    
                     >
@@ -86,10 +86,10 @@ const Work = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
-                </motion.div>
+                  </div>
+                </div>
               ) : (
-                < motion.div
+                < div
                 className="border border-[#FF0066] rounded-[8px] tablet:rounded-[12px]  hover:backdrop-blur-2xl hover:scale-[1.01] duration-300  "
                 initial={{
                   x:-100,
@@ -153,7 +153,7 @@ const Work = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               )}
             </div>
           ))}

@@ -10,7 +10,7 @@ const Contacts = () => {
   return (
     <div
       name="contact"
-      className="w-full h-auto   flex justify-center items-center p-4 text-[#ededed] py-10  "
+      className="w-full h-auto min-h-screen mb-[5rem]  flex justify-center items-center p-4 text-[#ededed] py-10  "
     >
       <div className="grid  tablet:grid-cols-2">
         <div className="pt-12 ">

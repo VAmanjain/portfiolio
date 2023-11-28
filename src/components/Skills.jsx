@@ -61,7 +61,7 @@ const tech = [
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-auto text-gray-300">
+    <div name="skills" className="w-full h-auto min-h-screen  text-gray-300">
       {/* container  */}
       <div className="container mx-auto p-4 flex flex-col w-full h-full pt-[90px]">
         <div className="pb-4">
@@ -79,7 +79,7 @@ const Skills = () => {
             return (
               <div key={tech.id}>
                 <div className="flex justify-center  ">
-                  <motion.div
+                  <div
                     className="w-[12rem] h-[10rem] my-4 rounded shadow-md shadow-[#000000] font-semibold border border-[#FF0066] border-2 hover:backdrop-blur-2xl  skills"
                     whileHover={{
                       scale: 1.05,
@@ -100,7 +100,7 @@ const Skills = () => {
                   >
                     <Icon size={100} className="py-4 mx-auto" />
                     <p className="my-2 relative">{techs.skill}</p>
-                  </motion.div>
+                  </div>
                 </div>
               </div>
             );

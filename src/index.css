@@ -7,8 +7,9 @@
 @layer base {
     body {
         @apply font-[Raleway];
-     background-image: url("../src/assests/bg.svg");
-     height: auto;
+     /* background-image: url("../src/assests/bg.svg");
+     height: auto; */
+     background-color: #0b0033;
    
       width: 100%;
     }
