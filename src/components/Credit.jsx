@@ -6,8 +6,8 @@ import { SiBento } from "react-icons/si";
 
 const Credit = () => {
   return (
-    <div className="w-full h-[7rem] tablet:h-[4rem] bg-[#0d0d25]  px-6 grid grid-cols-1 tablet:flex table:justify-center tablet:items-center">
-      <div className="w-full my-2 flex  justify-center items-center text-white font-semibold  tablet:w-[50%] tablet:justify-start  ">
+    <div className="w-full h-[7rem] tablet:h-[4rem] bg-[#0d0d25]  px-6 grid grid-cols-1 tablet:flex table:justify-center tablet:items-center border border-white ">
+      <div className="w-full my-2 flex  justify-center items-center text-textcolor font-semibold  tablet:w-[50%] tablet:justify-start  ">
         <h2>Designed and Developed by </h2>
         <h2 className="px-1 font-semibold" style={{ fontSize: "1.3rem" }}>
           <AiOutlineCopyrightCircle />
@@ -16,7 +16,7 @@ const Credit = () => {
           <a href="https://github.com/VAmanjain/portfiolio">Aman Jain</a>
         </h2>
       </div>
-      <div className="flex justify-center items-center text-white my-2 tablet:w-[50%]">
+      <div className="flex justify-center items-center text-textcolor hover my-2 tablet:w-[50%]">
         <ul className="flex justify-center items-center">
           <li>
             <a

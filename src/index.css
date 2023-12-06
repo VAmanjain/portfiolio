@@ -19,6 +19,24 @@
     }
 }
 
+:root{
+    --bgcolor:#232528;
+    --whitecolor:#EAF6FF;
+    --bluecolor:#2A2A72;
+    --lightBluecolor:#009FFD;
+    --yellowcolor:#FFA400;
+}
+
+body{
+    background-image: repeating-linear-gradient(45deg, rgba(226, 226, 226,0.06) 0px, rgba(226, 226, 226,0.06) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(11,0,51),rgb(11,0,51));
+}
+
+.nav{
+    background-image: repeating-linear-gradient(45deg, rgba(226, 226, 226,0.06) 0px, rgba(226, 226, 226,0.06) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(11,0,51),rgb(11,0,51));
+}
+
+
+
 .content-div {
     background-repeat: no-repeat;
     background-size: cover;

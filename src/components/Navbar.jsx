@@ -11,9 +11,10 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed  w-screen h-[70px] flex justify-between items-center px-4  text-gray-300  z-10 backdrop-blur-xs">
-      <div>
-        <h1 className="text-3xl font-bold">
+    <div className="nav  fixed w-screen h-[70px] laptop:h-[90px] flex justify-between items-center px-[4rem]  text-gray-300  z-10  border border-white tablet:border-none ">
+      
+      <div className="border border-white border-[2px] mx-3 p-2 rounded-full laptop:mx-10 ">
+        <h1 className="text-2xl laptop:text-3xl text-textcolor font-bold px-[1.2px]">
           <Link className="cursor-pointer " to="intro">
             Aj.
           </Link>
@@ -22,10 +23,10 @@ const Navbar = () => {
 
       {/* Menu  */}
 
-      <ul className=" hidden tablet:flex text-[1.2rem] font-bold ">
+      <ul className=" hidden w-full tablet:flex justify-center text-[1.2rem] font-bold text-textcolor border border-white border-[2px] p-2 rounded-[40px] ">
         <li data-aos="fade-down">
           <Link
-            className=" flex justify-start items-center  hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
+            className=" flex justify-start items-center  hover:text-yellowcolor duration-100  "
             to="*"
           >
             <BiHomeAlt className="mx-2" />
@@ -34,16 +35,16 @@ const Navbar = () => {
         </li>
         <li data-aos="fade-down">
           <Link
-            className=" flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
+            className=" flex justify-start items-center hover:text-yellowcolor duration-100  "
             to="/skills"
           >
             <HiOutlineDesktopComputer className="mx-2" />
-            Skills
+           About
           </Link>{" "}
         </li>
         <li data-aos="fade-down">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
+            className="flex justify-start items-center hover:text-yellowcolor duration-100  "
             to="/work"
           >
             <AiOutlineFundProjectionScreen className="mx-2" /> Project
@@ -51,7 +52,7 @@ const Navbar = () => {
         </li>
         <li data-aos="fade-down">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
+            className="flex justify-start items-center hover:text-yellowcolor duration-100  "
             to="/contact"
           >
             <RiContactsLine className="mx-2" /> Contact
@@ -60,7 +61,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger  */}
-      <div onClick={handleClick} className="tablet:hidden z-10">
+      <div onClick={handleClick} className="tablet:hidden z-10 text-textcolor text-[1.2rem] border border-white border-[2px] rounded-full p-3 ">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -69,12 +70,14 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "  absolute top-0 left-0 w-full h-screen  bg-[#0b0033] flex flex-col justify-center items-center "
+            : " nav  absolute top-0 left-0 w-full h-screen  bg-bgcolor text-textcolor flex flex-col justify-center items-center   "
         }
       >
+        <div className="p-4 border border-white  rounded-b-2xl rounded-l-xl  ">
+
         <li className="py-4 text-4xl">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
+            className="flex justify-start items-center hover:text-yellowcolor duration-100  "
             onClick={handleClick}
             to="home"
             data-aos="fade-right"
@@ -84,35 +87,36 @@ const Navbar = () => {
         </li>
         <li className="py-4 text-4xl">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
+            className="flex justify-start items-center hover:text-yellowcolor duration-100  "
             onClick={handleClick}
             to="skills"
             data-aos="fade-right"
-          >
-            <HiOutlineDesktopComputer className="mx-2" /> Skills
+            >
+            <HiOutlineDesktopComputer className="mx-2" />About
           </Link>{" "}
         </li>
         <li className="py-4 text-4xl">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
+            className="flex justify-start items-center hover:text-yellowcolor duration-100  "
             onClick={handleClick}
             to="work"
             data-aos="fade-right"
-          >
+            >
             <AiOutlineFundProjectionScreen className="mx-2" /> Projects
           </Link>{" "}
         </li>
 
         <li className="py-4 text-4xl">
           <Link
-            className="flex justify-start items-center hover:border-b-2 border-[#ff0066] duration-100 active:text-[#ff0066] "
+            className="flex justify-start items-center hover:text-yellowcolor duration-100  "
             onClick={handleClick}
             to="contact"
             data-aos="fade-right"
-          >
+            >
             <RiContactsLine className="mx-2" /> Contact
           </Link>
         </li>
+            </div>
       </ul>
     </div>
   );

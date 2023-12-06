@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from './components/Work'
 import Hero from "./components/Hero";
+import Home from "./components/Home";
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
 <BrowserRouter>
 <Navbar/>
     <Routes>
-      <Route path="*" element={<Hero/>} />
-      <Route path="/skills" element={<Skills/>} />
+      <Route path="*" element={ <Home/>} />
+      <Route path="/skills" element={<Hero/>} />
       <Route path="/work" element={<Work/>} />
       <Route path="/contact" element={<Contacts/>} />
     </Routes>
