@@ -10,7 +10,7 @@ const Contacts = () => {
     <div name="contact" className="w-[100%] h-auto tablet:p-4 py-5  ">
       <div className="mt-[90px] px-4">
         <div className="mx-4">
-          <div className="text-yellowcolor font-bold  border border-white border-[2px] p-2 flex justify-center items-center rounded-[40px] mb-4  ">
+          <div className="text-yellowcolor font-bold border-white border-[2px] p-2 flex justify-center items-center rounded-[40px] mb-4  ">
             <h1 className="text-2xl tablet:text-3xl laptop:text-4xl text-center">
               Contact
             </h1>
@@ -94,7 +94,7 @@ const Contacts = () => {
                   rows="5"
                   required
                 ></textarea>
-                <button className=" f-btn text-bgcolor border border-bgcolor text-[1.2rem] border-2 py-1 px-4 mx-auto my-4 flex items-center rounded ">
+                <button className=" f-btn text-bgcolor border-2 border-bgcolor text-[1.2rem] py-1 px-4 mx-auto my-4 flex items-center rounded ">
                   Submit
                 </button>
               </form>
