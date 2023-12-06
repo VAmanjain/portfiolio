@@ -81,7 +81,8 @@ const Work = () => {
                       onClick={() => handleOpen(item.id)}
                       variant="gradient"
                       className=" bg-bluecolor border-[2px] border-white mb-2 rounded-[8px] p-2 px-4 mx-2 flex items-center text-[0.8rem] "
-                    ><TbListDetails size={15} className="mx-1"/>
+                    >
+                      <TbListDetails size={15} className="mx-1" />
                       View Details
                     </Button>
                     <Dialog
@@ -92,16 +93,18 @@ const Work = () => {
                         mount: { scale: 1, y: 0 },
                         unmount: { scale: 0.9, y: -100 },
                       }}
-                      className="bg-bluecolor mx-auto max-w-[90%] h-[90vh] laptop:h-auto p-1 "
+                      className="bg-bluecolor mt-4 mx-auto max-w-[90%] h-[90vh] laptop:h-auto p-1 "
                     >
-                      <Button
+                      <div className="flex justify-end">
+                        <Button
                           variant="gradient"
                           color="green"
                           onClick={handleOpen}
-                          className="border-[2px] border-white rounded-[8px] p-2 flex text-end "
+                          className="border-[2px] border-white rounded-[8px] p-2 "
                         >
                           <span>Close</span>
                         </Button>
+                      </div>
                       <DialogBody className="w-[100%] h-[80vh] grid  laptop:flex justify-center items-center ">
                         <div className="  mx-auto tablet:h-auto laptop:h-auto laptop:w-[50%]">
                           <img
@@ -117,45 +120,43 @@ const Work = () => {
                             </h1>
                           </div>
                           <div className=" h-[35vh] laptop:h-auto  overflow-y-scroll laptop:overflow-auto ">
-                            
-                          <div>
-                            <p className="text-textcolor text-justify mb-1">
-                              {" "}
-                              {item.desc}{" "}
-                            </p>
-                          </div>
-                          <div className=" flex flex-wrap text-textcolor  ">
-                            <span className="font-medium text-yellowcolor text-[1.1rem] mb-1 mx-1 ">
-                              TIME FRAME:
-                            </span>
-                            {item.time}
-                          </div>
-                          <div className="flex flex-wrap items-center ">
-                            <span className="font-medium text-yellowcolor text-[1.1rem] mx-1 ">
-                              TECHSTACK:
-                            </span>
-                            <ul className="flex flex-wrap  px-2 pb-2">
-                              {item.technologies &&
-                                item.technologies.map((techs, index) => (
-                                  <li
-                                    key={index}
-                                    className=" flex items-center w-[40px] rounded-[50%]  p-2 "
-                                  >
-                                    <img src={techs} alt="" className=" " />
-                                  </li>
-                                ))}
-                            </ul>
-                          </div>
-                          <div className="mb-1 text-textcolor ">
-                            <span className="font-medium text-yellowcolor mx-1 ">
-                              CONTEXT:
-                            </span>
-                            {item.context}
-                          </div>
+                            <div>
+                              <p className="text-textcolor text-justify mb-1">
+                                {" "}
+                                {item.desc}{" "}
+                              </p>
+                            </div>
+                            <div className=" flex flex-wrap text-textcolor  ">
+                              <span className="font-medium text-yellowcolor text-[1.1rem] mb-1 mx-1 ">
+                                TIME FRAME:
+                              </span>
+                              {item.time}
+                            </div>
+                            <div className="flex flex-wrap items-center ">
+                              <span className="font-medium text-yellowcolor text-[1.1rem] mx-1 ">
+                                TECHSTACK:
+                              </span>
+                              <ul className="flex flex-wrap  px-2 pb-2">
+                                {item.technologies &&
+                                  item.technologies.map((techs, index) => (
+                                    <li
+                                      key={index}
+                                      className=" flex items-center w-[40px] rounded-[50%]  p-2 "
+                                    >
+                                      <img src={techs} alt="" className=" " />
+                                    </li>
+                                  ))}
+                              </ul>
+                            </div>
+                            <div className="mb-1 text-textcolor ">
+                              <span className="font-medium text-yellowcolor mx-1 ">
+                                CONTEXT:
+                              </span>
+                              {item.context}
+                            </div>
                           </div>
                         </div>
                       </DialogBody>
-                 
                     </Dialog>
                   </div>
                 </div>
