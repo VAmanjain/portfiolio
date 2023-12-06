@@ -92,14 +92,14 @@ const Work = () => {
                         mount: { scale: 1, y: 0 },
                         unmount: { scale: 0.9, y: -100 },
                       }}
-                      className="bg-bluecolor mx-4 max-w-[1200px] p-2 "
+                      className="bg-bluecolor mx-4 max-w-[95%] h-[90vh] laptop:h-auto p-2 "
                     >
                       <DialogBody className="w-[100%] h-full grid gap-2 laptop:flex justify-center items-center ">
                         <div className="  mx-auto tablet:h-auto laptop:h-auto laptop:w-[50%]">
                           <img
                             src={item.image}
                             alt={item.name}
-                            className=" rounded h-[10rem] tablet:h-[14rem] laptop:h-auto "
+                            className=" rounded h-[10rem] tablet:h-[10rem] laptop:h-auto "
                           />
                         </div>
                         <div className=" h-[50vh] laptop:h-auto laptop:w-[50%] p-2 ">
