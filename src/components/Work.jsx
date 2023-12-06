@@ -4,6 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { BiGitBranch } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLink } from "react-icons/fa";
+import { TbListDetails } from "react-icons/tb";
 
 import {
   Button,
@@ -63,14 +64,14 @@ const Work = () => {
                       className="bg-bluecolor rounded-[8px] p-2 px-4 flex mx-2 items-center border-[2px] border-white "
                     >
                       {" "}
-                      <AiFillGithub size={20} className="mx-1" /> GitHub
+                      <AiFillGithub size={20} className="mx-1" /> GITHUB
                     </a>
                     <a
                       href={item.live}
                       className="bg-bluecolor rounded-[8px] p-2 px-4 flex mx-2 items-center border-[2px] border-white "
                     >
                       {" "}
-                      <FaLink size={15} className=" mx-1 " /> Demo{" "}
+                      <FaLink size={15} className=" mx-1 " /> DEMO{" "}
                     </a>
                   </div>
                   <div className="mx-auto flex justify-center items-center mt-2 ">
@@ -79,8 +80,8 @@ const Work = () => {
                     <Button
                       onClick={() => handleOpen(item.id)}
                       variant="gradient"
-                      className=" bg-bluecolor border-[2px] border-white mb-2 "
-                    >
+                      className=" bg-bluecolor border-[2px] border-white mb-2 rounded-[8px] p-2 px-4 mx-2 flex items-center text-[0.8rem] "
+                    ><TbListDetails size={15} className="mx-1"/>
                       View Details
                     </Button>
                     <Dialog
@@ -93,37 +94,39 @@ const Work = () => {
                       }}
                       className="bg-bluecolor mx-4 max-w-[1200px] p-2 "
                     >
-                      <DialogBody className="w-full h-full grid laptop:flex justify-center items-center ">
-                        <div className=" laptop:w-[50%]">
+                      <DialogBody className="w-[100%] h-full grid gap-2 laptop:flex justify-center items-center ">
+                        <div className="  mx-auto tablet:h-auto laptop:h-auto laptop:w-[50%]">
                           <img
                             src={item.image}
                             alt={item.name}
-                            className=" rounded "
+                            className=" rounded h-[10rem] tablet:h-[14rem] laptop:h-auto "
                           />
                         </div>
-                        <div className=" laptop:w-[50%] p-4 overflow-scroll laptop:overflow-auto ">
+                        <div className=" h-[50vh] laptop:h-auto laptop:w-[50%] p-2 ">
                           <div className="text-center ">
                             <h1 className="text-textcolor font-semibold text-2xl mb-1  ">
                               {item.name}
                             </h1>
                           </div>
+                          <div className=" h-[40vh] laptop:h-auto  overflow-y-scroll laptop:overflow-auto ">
+                            
                           <div>
                             <p className="text-textcolor text-justify mb-1">
                               {" "}
                               {item.desc}{" "}
                             </p>
                           </div>
-                          <div className=" flex text-textcolor  ">
+                          <div className=" flex flex-wrap text-textcolor  ">
                             <span className="font-medium text-yellowcolor text-[1.1rem] mb-1 mx-1 ">
                               TIME FRAME:
                             </span>
                             {item.time}
                           </div>
-                          <div className="flex items-center ">
+                          <div className="flex flex-wrap items-center ">
                             <span className="font-medium text-yellowcolor text-[1.1rem] mx-1 ">
                               TECHSTACK:
                             </span>
-                            <ul className="flex  px-2 pb-2">
+                            <ul className="flex flex-wrap  px-2 pb-2">
                               {item.technologies &&
                                 item.technologies.map((techs, index) => (
                                   <li
@@ -141,14 +144,15 @@ const Work = () => {
                             </span>
                             {item.context}
                           </div>
+                          </div>
                         </div>
                       </DialogBody>
-                      <DialogFooter>
+                      <DialogFooter className="h-[10vh] laptop:h-auto ">
                         <Button
                           variant="gradient"
                           color="green"
                           onClick={handleOpen}
-                          className="border-[2px] border-white "
+                          className="border-[2px] border-white rounded-[8px] p-2 "
                         >
                           <span>Close</span>
                         </Button>

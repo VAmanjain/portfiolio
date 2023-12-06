@@ -11,9 +11,9 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="nav  fixed w-screen h-[70px] laptop:h-[90px] flex justify-between items-center px-[4rem]  text-gray-300  z-10  border border-white tablet:border-none ">
+    <div className="nav  fixed w-screen h-[70px] laptop:h-[90px] flex justify-between items-center px-[4rem]  text-gray-300  z-10  border-b border-white tablet:border-none ">
       
-      <div className="border border-white border-[2px] mx-3 p-2 rounded-full laptop:mx-10 ">
+      <div className="border-white border-[2px] mx-3 p-2 rounded-full laptop:mx-10 ">
         <h1 className="text-2xl laptop:text-3xl text-textcolor font-bold px-[1.2px]">
           <Link className="cursor-pointer " to="intro">
             Aj.
