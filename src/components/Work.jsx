@@ -92,9 +92,17 @@ const Work = () => {
                         mount: { scale: 1, y: 0 },
                         unmount: { scale: 0.9, y: -100 },
                       }}
-                      className="bg-bluecolor mx-4 max-w-[95%] h-[90vh] laptop:h-auto p-2 "
+                      className="bg-bluecolor mx-auto max-w-[90%] h-[90vh] laptop:h-auto p-1 "
                     >
-                      <DialogBody className="w-[100%] h-full grid gap-2 laptop:flex justify-center items-center ">
+                      <Button
+                          variant="gradient"
+                          color="green"
+                          onClick={handleOpen}
+                          className="border-[2px] border-white rounded-[8px] p-2 flex text-end "
+                        >
+                          <span>Close</span>
+                        </Button>
+                      <DialogBody className="w-[100%] h-[80vh] grid  laptop:flex justify-center items-center ">
                         <div className="  mx-auto tablet:h-auto laptop:h-auto laptop:w-[50%]">
                           <img
                             src={item.image}
@@ -102,13 +110,13 @@ const Work = () => {
                             className=" rounded h-[10rem] tablet:h-[10rem] laptop:h-auto "
                           />
                         </div>
-                        <div className=" h-[50vh] laptop:h-auto laptop:w-[50%] p-2 ">
+                        <div className=" h-[40vh] laptop:h-auto laptop:w-[50%] p-2 ">
                           <div className="text-center ">
                             <h1 className="text-textcolor font-semibold text-2xl mb-1  ">
                               {item.name}
                             </h1>
                           </div>
-                          <div className=" h-[40vh] laptop:h-auto  overflow-y-scroll laptop:overflow-auto ">
+                          <div className=" h-[35vh] laptop:h-auto  overflow-y-scroll laptop:overflow-auto ">
                             
                           <div>
                             <p className="text-textcolor text-justify mb-1">
@@ -147,16 +155,7 @@ const Work = () => {
                           </div>
                         </div>
                       </DialogBody>
-                      <DialogFooter className="h-[10vh] laptop:h-auto ">
-                        <Button
-                          variant="gradient"
-                          color="green"
-                          onClick={handleOpen}
-                          className="border-[2px] border-white rounded-[8px] p-2 "
-                        >
-                          <span>Close</span>
-                        </Button>
-                      </DialogFooter>
+                 
                     </Dialog>
                   </div>
                 </div>
