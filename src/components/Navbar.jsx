@@ -70,11 +70,10 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : " nav  absolute top-0 left-0 w-full h-screen  bg-bgcolor text-textcolor flex flex-col justify-center items-center   "
+            : " nav  absolute top-[100%] left-0 w-[100%] h-auto  bg-bgcolor text-textcolor flex flex-col justify-center items-center   "
         }
       >
-        <div className="p-4 border border-white  rounded-b-2xl rounded-l-xl  ">
-
+        <div className="p-4 border border-white  rounded-2xl">
         <li className="py-4 text-4xl">
           <Link
             className="flex justify-start items-center hover:text-yellowcolor duration-100  "
