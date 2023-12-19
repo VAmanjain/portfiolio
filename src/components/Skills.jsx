@@ -75,9 +75,9 @@ const tech = [
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-auto min-h-screen">
+    <div name="skills" className="w-full h-auto min-h-screen flex justify-center items-center">
       {/* container  */}
-      <div className="container mx-auto p-4 flex flex-col w-full h-full">
+      <div className="container mx-auto p-4 flex flex-col w-full h-full  ">
         <div className="p-4 flex justify-evenly items-center border-white border-[2px] rounded-[40px] text-yellowcolor my-auto " >
           <p className="text-4xl font-bold inline">
             Skills

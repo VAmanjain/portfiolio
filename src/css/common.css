@@ -100,13 +100,14 @@
   .skills{
     border: #1877F2 1px solid ;
     scale: 1;
+    transition: 0.2s ease-in-out;
    
   }
 
   .skills:hover{
     box-shadow: 1px 0px 2px #1DA1F2,-1px -0px 2px #1DA1F2;
     scale: 1.05;
-    transition: 200ms ease-in-out;
+    transition: 0.2s ease-in-out;
 
   }
 

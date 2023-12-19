@@ -23,7 +23,7 @@ const Navbar = () => {
 
       {/* Menu  */}
 
-      <ul className=" hidden w-full tablet:flex justify-center text-[1.2rem] font-bold text-textcolor border border-white border-[2px] p-2 rounded-[40px] ">
+      <ul className=" hidden w-full tablet:flex justify-center text-[1.2rem] font-bold text-textcolor  border-white border-[2px] p-2 rounded-[40px] ">
         <li data-aos="fade-down">
           <Link
             className=" flex justify-start items-center  hover:text-yellowcolor duration-100  "
@@ -61,7 +61,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger  */}
-      <div onClick={handleClick} className="tablet:hidden z-10 text-textcolor text-[1.2rem] border border-white border-[2px] rounded-full p-3 ">
+      <div onClick={handleClick} className="tablet:hidden z-10 text-textcolor text-[1.2rem]  border-white border-[2px] rounded-full p-3 ">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
