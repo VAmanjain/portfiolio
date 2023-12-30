@@ -65,7 +65,7 @@ const Contacts = () => {
                   <p className="text-gray-300 py-4">
                     // Submit the form below or shoot me email-
                     <span className="font-semibold text-light-bluecolor">
-                      vaman.jain@17gmail.com
+                      vaman.jain17@gmail.com
                     </span>
                   </p>
                 </div>
