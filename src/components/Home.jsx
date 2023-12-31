@@ -3,6 +3,7 @@ import Image from "../assests/myAvatar.png";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import IntroImage from '../../src/assests/introPic.png'
 
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
@@ -60,8 +61,11 @@ const Home = () => {
               <p className="text-[1.2rem] tablet:text-[2.5rem]   text-[#ccd6f6] z-20">
                 Hi, This is
               </p>
-              <h1 className=" name text-[2.2rem] tablet:mb-8 text-textcolor  mb-4 tablet:text-[4rem] font-bold  ">
+              <h1 className=" name text-[2.2rem] tablet:mb-8 text-textcolor  mb-4 tablet:text-[4rem] font-bold tablet:flex items-center mx-auto ">
                 AMAN JAIN
+                <span className="w-full h-auto flex justify-center tablet:w-auto " >
+                  <img src={IntroImage} alt="" className=" w-[8rem] mx-a " />
+                </span>
               </h1>
               <h2 className="text-[1.3rem] grid laptop:flex tablet:text-[2rem] font-bold text-[#ededed] ">
                 I'm
