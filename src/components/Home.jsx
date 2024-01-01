@@ -71,7 +71,7 @@ const Home = () => {
                 I'm
                 <span className=" d-desc text-light-bluecolor px-0 laptop:px-2 ">
                   {text}
-                  <Cursor cursorStyle="|" />{" "}
+                  <Cursor cursorStyle="|" />
                 </span>
               </h2>
             </div>
