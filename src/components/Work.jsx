@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "../data/data.js";
+import { data } from "../data/data.jsx";
 import { BsArrowUpRight } from "react-icons/bs";
 import { BiGitBranch } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
