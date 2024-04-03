@@ -2,22 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
-@layer base {
-    body {
-        @apply font-[Raleway];
-     /* background-image: url("../src/assests/bg.svg");
-     height: auto; */
-     background-color: #0b0033;
-   
-      width: 100%;
-    }
-    li {
-        @apply px-4;
-        @apply cursor-pointer
-    }
-}
+
 
 :root{
     --bgcolor:#232528;
@@ -52,6 +40,3 @@ body{
     )!important;
     transition: ease-in-out;
 }
-
-
-

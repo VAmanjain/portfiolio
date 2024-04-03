@@ -42,7 +42,7 @@ const Home = () => {
       <div className=" px-4 tablet:px-8 flex flex-cols-2 justify-center items-center w-full h-full ">
         <div className="w-full mt-[40px] laptop:mt-[90px] mx-auto h-auto justify-center items-center ">
           <div className=" text-yellowcolor font-bold  flex justify-center items-center text-2xl tablet:text-3xl laptop:text-4xl p-2 border border-white border-[2px] rounded-[40px] ">
-            <h1 className="text-center ">Welcome to My Protfolio</h1>
+            <h1 className="text-center ">Welcome to My Portfolio</h1>
           </div>
           <div className="  tablet:grid  tablet:grid-cols-2  py-8 mt-6 ">
             <div className="w-full mx-auto justify-center items-center py-[1.7rem] ">
