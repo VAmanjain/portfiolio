@@ -17,8 +17,8 @@ const Credit = () => {
         </h2>
       </div>
       <div className="flex justify-center items-center text-textcolor hover my-2 tablet:w-[50%]">
-        <ul className="flex justify-center items-center">
-          <li>
+        <ul className="flex justify-between items-center">
+          <li className="mx-2">
             <a
               className="flex justify-between items-center "
               href="https://www.linkedin.com/in/aman-jain-416321256"
@@ -27,7 +27,7 @@ const Credit = () => {
               <FaLinkedin size={20} />
             </a>
           </li>
-          <li>
+          <li className="mx-2">
             <a
               className="flex justify-between items-center "
               href="https://github.com/VAmanjain"
@@ -36,7 +36,7 @@ const Credit = () => {
               <FaGithub size={20} />
             </a>
           </li>
-          <li>
+          <li className="mx-2">
             <a
               className="flex justify-between items-center "
               href="https://instagram.com/iamanjain17?igshid=MzRlODBiNWFlZA=="
@@ -45,7 +45,7 @@ const Credit = () => {
               <BsInstagram size={20} />
             </a>
           </li>
-          <li>
+          <li className="mx-2">
             <a
               className="flex justify-between items-center "
               href="https://bento.me/vamanjain"

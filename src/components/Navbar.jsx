@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Menu  */}
 
       <ul className=" hidden w-full tablet:flex justify-center text-[1.2rem] font-bold text-textcolor  border-white border-[2px] p-2 rounded-[40px] ">
-        <li data-aos="fade-down">
+        <li className="mx-2">
           <Link
             className=" flex justify-start items-center  hover:text-yellowcolor duration-100  "
             to="*"
@@ -33,7 +33,7 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li data-aos="fade-down">
+        <li className="mx-2">
           <Link
             className=" flex justify-start items-center hover:text-yellowcolor duration-100  "
             to="/skills"
@@ -42,7 +42,7 @@ const Navbar = () => {
            About
           </Link>{" "}
         </li>
-        <li data-aos="fade-down">
+        <li className="mx-2">
           <Link
             className="flex justify-start items-center hover:text-yellowcolor duration-100  "
             to="/work"
@@ -50,7 +50,7 @@ const Navbar = () => {
             <AiOutlineFundProjectionScreen className="mx-2" /> Project
           </Link>
         </li>
-        <li data-aos="fade-down">
+        <li className="mx-2">
           <Link
             className="flex justify-start items-center hover:text-yellowcolor duration-100  "
             to="/contact"

@@ -27,7 +27,7 @@ const About = () => {
             various web development technologies such as{" "}
             <span className="text-light-bluecolor">
               {" "}
-              JS, React Js, ExpressJs, NodeJs{" "}
+              Develpoment, Database, Auth
             </span>{" "}
             and more.
           </h1>

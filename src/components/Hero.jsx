@@ -17,7 +17,7 @@ const Hero = () => {
     <div className="w-[100%] h-auto tablet:p-4 py-5">
       <div className="mt-[90px] px-4">
         <div className="mx-4">
-          <div className="text-yellowcolor font-bold  border border-white border-[2px] p-2 flex justify-center items-center rounded-[40px] mb-4  ">
+          <div className="text-yellowcolor font-bold  border-[2px] border-white p-2 flex justify-center items-center rounded-[40px] mb-4  ">
             <h1 className="text-2xl tablet:text-3xl laptop:text-4xl text-center">Let Me Introduce myself </h1>
           </div>
           

@@ -1,37 +1,32 @@
 import React from "react";
 import Image from "../assests/myAvatar.png";
-import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import IntroImage from '../../src/assests/introPic.png'
 
-import { FiGithub } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { SiBento } from "react-icons/si";
 
 const ResumeClick = () => {
   document.getElementById("resume-a").click();
 };
 
 const defaultOptions = {
-  reverse: false, // reverse the tilt direction
-  max: 45, // max tilt rotation (degrees)
-  perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
-  scale: 1, // 2 = 200%, 1.5 = 150%, etc..
-  speed: 1000, // Speed of the enter/exit transition
-  transition: true, // Set a transition on enter/exit.
-  axis: null, // What axis should be disabled. Can be X or Y.
-  reset: true, // If the tilt effect has to be reset on exit.
-  easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+  reverse: false, 
+  max: 45, 
+  perspective: 1000,
+  scale: 1,
+  speed: 1000,
+  transition: true,
+  axis: null,
+  reset: true,
+  easing: "cubic-bezier(.03,.98,.52,.99)", 
 };
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ["Front end Developer", "Student", "Designer"],
+    words: ["MERN Stack Developer", "Student", "Designer"],
     loop: {},
   });
-
+ 
   return (
     <div
       name="home"
@@ -41,7 +36,7 @@ const Home = () => {
 
       <div className=" px-4 tablet:px-8 flex flex-cols-2 justify-center items-center w-full h-full ">
         <div className="w-full mt-[40px] laptop:mt-[90px] mx-auto h-auto justify-center items-center ">
-          <div className=" text-yellowcolor font-bold  flex justify-center items-center text-2xl tablet:text-3xl laptop:text-4xl p-2 border border-white border-[2px] rounded-[40px] ">
+          <div className=" text-yellowcolor font-bold  flex justify-center items-center text-2xl tablet:text-3xl laptop:text-4xl p-2 border-[2px] border-white rounded-[40px] ">
             <h1 className="text-center ">Welcome to My Portfolio</h1>
           </div>
           <div className="  tablet:grid  tablet:grid-cols-2  py-8 mt-6 ">
