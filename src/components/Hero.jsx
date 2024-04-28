@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLottie } from "lottie-react";
 import AboutImg from "../assests/About.json";
 
@@ -10,6 +10,14 @@ const Hero = () => {
     animationData: AboutImg,
     loop: true,
   };
+
+  useEffect
+  (()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',})
+  }, [])
+
 
   const { View } = useLottie(options);
 

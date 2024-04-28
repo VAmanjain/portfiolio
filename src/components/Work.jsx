@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { data } from "../data/data.jsx";
 import { BsArrowUpRight } from "react-icons/bs";
 import { BiGitBranch } from "react-icons/bi";
@@ -23,6 +23,13 @@ const Work = () => {
   // projects file
   const project = data;
   //setProject(data);
+
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',})
+  }, [])
+
 
   return (
     <div

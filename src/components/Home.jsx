@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "../assests/myAvatar.png";
 import { Tilt } from "react-tilt";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
@@ -27,6 +27,13 @@ const Home = () => {
     loop: {},
   });
  
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',})
+  }, [])
+
+
   return (
     <div
       name="home"

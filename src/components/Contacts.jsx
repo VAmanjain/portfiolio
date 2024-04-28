@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
@@ -6,6 +6,14 @@ import { SiBento } from "react-icons/si";
 import ContactImg from "../assests/ConatctImg.svg";
 
 const Contacts = () => {
+
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',})
+  }, [])
+
+
   return (
     <div name="contact" className="w-[100%] h-auto tablet:p-4 py-5  ">
       <div className="mt-[90px] px-4">
