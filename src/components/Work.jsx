@@ -5,7 +5,6 @@ import { BiGitBranch } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLink } from "react-icons/fa";
 import { TbListDetails } from "react-icons/tb";
-
 import {
   Button,
   Dialog,
@@ -103,9 +102,9 @@ const Work = () => {
                         mount: { scale: 1, y: 0 },
                         unmount: { scale: 0.9, y: -100 },
                       }}
-                      className="bg-bluecolor mt-4 align-middle mx-auto max-w-[90%] h-[90vh] laptop:h-min p-1 backdrop:blur-sm rounded-[8px] relative laptop:top-[15%]  "
+                      className="bg-bluecolor mt-4 align-middle mx-auto max-w-[90%] h-[96vh] laptop:h-min p-1 backdrop:blur-tablet rounded-[8px] relative laptop:top-[15%]  "
                     >
-                      <DialogBody className="w-[100%] h-[80vh] laptop:h-min grid  laptop:flex justify-center items-center ">
+                      <DialogBody className="w-[100%] h-[85vh] laptop:h-min grid tablet:gap-4 laptop:flex justify-center items-center ">
                         <div className="  mx-auto tablet:h-auto laptop:h-auto laptop:w-[50%]">
                           <img
                             src={item.image}
@@ -115,7 +114,7 @@ const Work = () => {
                         </div>
                         <div className=" h-[40vh] laptop:h-auto laptop:w-[50%] p-2 ">
                           <div className="text-center ">
-                            <h1 className="text-textcolor font-semibold text-2xl mb-1  ">
+                            <h1 className="text-textcolor font-semibold text-2xl tablet:text-4xl mb-1  ">
                               {item.name}
                             </h1>
                           </div>
@@ -136,7 +135,7 @@ const Work = () => {
                               <span className="font-medium text-yellowcolor text-[1.1rem] mx-1 ">
                                 TECHSTACK:
                               </span>
-                              <ul className="flex flex-wrap  px-2 pb-2">
+                              <ul className="flex flex-wrap gap-2  px-2 pb-2">
                                 {item.technologies &&
                                   item.technologies.map((techs, index) => (
                                     <li

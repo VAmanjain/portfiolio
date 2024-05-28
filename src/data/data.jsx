@@ -3,6 +3,7 @@ import game from "../assests/projects/Funbar.png";
 import travel from "../assests/projects/Dream.png";
 import news from "../assests/projects/new.com.png";
 import Hotel from "../assests/projects/Hotel.png";
+import Quirkify from "../assests/projects/Quikify.png";
 import HTML from "../assests/html.png";
 import CSS from "../assests/css.png";
 import JS from "../assests/javascript.png";
@@ -10,23 +11,40 @@ import ReactJS from "../assests/react.png";
 import Tailwind from "../assests/tailwindr.png";
 import Bootstrap from "../assests/Bootstrapr.png";
 import Sass from "../assests/sassr.png";
+import Next from '../assests/next.svg'
+import NodeJS from '../assests/nodejs.png'
+import Mongo from '../assests/mongo.png'
+import Tailwind2 from '../assests/Tailwind.svg'
+import NextAuth from '../assests/NextAuth.png'
 
 export const data = [
   {
     id: 1,
+    name: "Quikify",
+    image: Quirkify,
+    github: "https://github.com/VAmanjain/Quirkify",
+    live: "https://main--quirkify-1.netlify.app/",
+    desc: "Quirkify is a unique thought-sharing platform where users express their quirky ideas, opinions, and experiences in a fun, engaging way.",
+    technologies: [Next,NextAuth, NodeJS, Mongo, Tailwind2],
+    time: "April 2024 - Present ",
+    context:
+      "Quirkify is a unique platform that celebrates individuality and encourages users to share their quirks, interests, and perspectives with a community that embraces diversity and fosters meaningful connections through the power of shared experiences and self-expression.",
+  },
+  {
+    id: 2,
     name: "Dreams Travel  ",
     image: travel,
     github: "https://github.com/VAmanjain/Dreams-Travel",
     live: "https://dreams-travel.netlify.app/",
     desc: "Dreams Travel is your go-to destination for all your travel needs. From exotic destinations to budget-friendly trips, we offer a wide range of options to make your dream vacation a reality.",
-    technologies: [HTML, CSS, JS, ReactJS, Tailwind, Bootstrap, Sass],
+    technologies: [HTML, CSS, JS, ReactJS, Tailwind2, Bootstrap, Sass],
     time: "September 2023 - October 2023 ",
     context:
       "Dreams Travel crafts bespoke journeys worldwide. With curated itineraries, seamless bookings, and expert guidance, we transform dreams into remarkable vacations. From cultural immersions to thrilling adventures, we cater to diverse travel desires. Explore confidently with us, discovering the world's wonders through unforgettable experiences.",
   },
 
   {
-    id: 2,
+    id: 3,
     name: "Fun-Bar",
     image: game,
     github: "https://github.com/VAmanjain/FunBar",
@@ -38,7 +56,7 @@ export const data = [
       "FanBar is a fun website with lots of different games. You can play many games. It's made using ca React, which helps make the games cool and fun to play. If you like games or want to learn about making games, FanBar is a great place to have fun and learn new things! Come join us and explore all the games at FanBar!.",
   },
   {
-    id: 3,
+    id: 4,
     name: "Hotel Skyline",
     image: Hotel,
     github:
@@ -52,7 +70,7 @@ export const data = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: "News.com",
     image: news,
     github: "https://github.com/VAmanjain/News.com",
@@ -64,7 +82,7 @@ export const data = [
       "News.com is a website that gives you the newest information from all around the world. Whether it's about big events, technology, sports, or anything else, you'll find it here. It's easy to use and helps you stay updated on what's happening globally. If you want to know what's going on in the world, News.com is the place to be!",
   },
   {
-    id: 5,
+    id: 6,
     name: "FlexStart Clone ",
     image: flex,
     github: "https://github.com/VAmanjain/flexstart",
