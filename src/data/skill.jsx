@@ -10,6 +10,8 @@ import { SiExpress } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPostman } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
+import { BiLogoSpringBoot } from "react-icons/bi";
 
 const skill = [
   {
@@ -94,6 +96,18 @@ const skill = [
     id: 10,
     skill: "C++",
     image: TbBrandCpp,
+    duration: 1,
+  },
+  {
+    id: 11,
+    skill: "Java",
+    image:FaJava,
+    duration: 1,
+  },
+  {
+    id: 12,
+    skill: "SpringBoot",
+    image: BiLogoSpringBoot,
     duration: 1,
   },
 ];
