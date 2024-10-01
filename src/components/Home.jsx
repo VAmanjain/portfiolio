@@ -23,7 +23,7 @@ const defaultOptions = {
 
 const Home = () => {
   const [text] = useTypewriter({
-    words: ["MERN Stack Developer", "Student", "Designer"],
+    words: ["MERN Stack Engineer","Spring Boot Engineer ", "Student", "Designer"],
     loop: {},
   });
  
