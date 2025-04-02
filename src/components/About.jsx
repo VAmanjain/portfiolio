@@ -25,11 +25,11 @@ const About = () => {
 
         <div className="w-full text-justify">
           <h1 className="text-textcolor font-semibold text-[1.2rem] py-2 ">
-            I am a second year Cs student. I'm passionate about exploring
+            I am a third year CS student. I'm passionate about exploring
             various web development technologies such as{" "}
             <span className="text-light-bluecolor">
               {" "}
-              Develpoment, Database, Auth
+              Develpoment, Database, Auth, Data structure
             </span>{" "}
             and more.
           </h1>

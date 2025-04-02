@@ -1,12 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./components/About";
 import Contacts from "./components/Contacts";
 import Credit from "./components/Credit";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
 import Work from './components/Work'
 import Hero from "./components/Hero";
 import Home from "./components/Home";
+import Resume from "./components/Resume";
 
 
 function App() {
@@ -21,6 +20,7 @@ function App() {
       <Route path="/skills" element={<Hero/>} />
       <Route path="/work" element={<Work/>} />
       <Route path="/contact" element={<Contacts/>} />
+      <Route path="/resume" element={<Resume/>} />
     </Routes>
 <Credit/>
 </BrowserRouter>

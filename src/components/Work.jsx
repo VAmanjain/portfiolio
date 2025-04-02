@@ -46,15 +46,15 @@ const Work = () => {
           {project.map((item, index) => (
             <div className="w-full py-[2px] ">
               <div className="p-box h-[38rem] tablet:h-[32rem] p-2  rounded-[16px] tablet:rounded-[12px]  ">
-                <div className="h-[12rem] mt-1 flex justify-center items-center p-2 ">
+                <div className="h-[15rem] mt-1 flex justify-center items-center p-2 object-fit ">
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="rounded-[8px]"
+                    className="rounded-[8px] w-fit h-[15rem] "
                   />
                 </div>
                 <div className="mt-1 h-[3rem] p-2 ">
-                  <h1 className="text-yellowcolor text-center font-semibold text-3xl ">
+                  <h1 className="text-yellowcolor text-center font-semibold text-xl tablet:text-3xl ">
                     {item.name}
                   </h1>
                 </div>
